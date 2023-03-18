@@ -4,8 +4,8 @@ services:
     image: postgres:13.5
     restart: always
     environment:
-      - POSTGRES_USER=daniel
-      - POSTGRES_PASSWORD=daniel
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
